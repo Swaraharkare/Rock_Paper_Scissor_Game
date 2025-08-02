@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: rgb(8, 8, 46);
+    color: white;
+    height: 5rem;
+    text-align: center;
+    /* to take heading at center vertically */
+    line-height: 5rem; 
+}
+
+.container{
+     margin: 2rem 6rem 2rem 6rem;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    box-shadow: 0 4px 8px rgba(6, 1, 1, 0.808);
+    background-color: #f8f2f4;
+
+
+}
+
+.choice{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.choice:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(16, 1, 1, 0.87);
+    background: #f3b8d8;
+}
+
+img{
+    height: 100px;
+    width:100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices{
+    margin: 2rem 2rem 2rem 5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:4rem;
+   
+}
+
+.marks{
+    margin: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:5rem;
+}
+
+.score-board{
+    margin-top: 50px;
+    /* margin-left: 0px; */
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    gap:5rem;
+    font-size: 1.5rem;
+}
+
+.score > p{
+    padding: 10px;
+    text-align: center;
+     font-size: 2rem;
+    font-weight: bold;
+     color:rgb(7, 7, 165);
+}
+#user-score,#comp-score{
+    color:red;
+    font-size: 2.5rem;
+}
+
+.msg-container{
+    margin: 2rem;
+    display: flex;
+    width: 26rem;
+    justify-content: center;
+    align-items:center;
+}
+
+#msg{
+    padding: 1rem 5rem 1rem 5rem  ;
+    background-color: rgb(3, 3, 69);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline;
+    border-radius: 1rem;
+}
